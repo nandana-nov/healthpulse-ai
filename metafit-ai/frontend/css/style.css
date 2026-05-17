@@ -1,0 +1,7 @@
+:root{--bg:#0f1724;--glass-bg:rgba(255,255,255,0.06);--accent:#6c5ce7}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+.bg-glass{background:linear-gradient(180deg,#f8fbff 0%, #eef6ff 100%);min-height:100vh}
+.glass-card{background:linear-gradient(135deg,rgba(255,255,255,0.6),rgba(255,255,255,0.35));backdrop-filter:blur(8px);border-radius:12px}
+.hero{padding:60px 0}
+/* Responsive */
+@media (max-width:768px){.hero{padding:32px 0}}

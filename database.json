@@ -1,0 +1,524 @@
+{
+  "users": [
+    {
+      "id": "user_001",
+      "username": "john_fitness",
+      "email": "john@example.com",
+      "password": "hashed_password_001",
+      "firstName": "John",
+      "lastName": "Smith",
+      "profile": {
+        "gender": "male",
+        "dateOfBirth": "1990-05-15",
+        "age": 34,
+        "height": 178,
+        "currentWeight": 75,
+        "targetWeight": 72,
+        "activityLevel": "moderate",
+        "medicalConditions": ["none"],
+        "allergies": []
+      },
+      "metadata": {
+        "createdAt": "2024-01-10T08:30:00Z",
+        "lastLogin": "2025-05-16T14:25:00Z",
+        "lastUpdated": "2025-05-16T14:25:00Z",
+        "isActive": true,
+        "subscriptionTier": "premium"
+      },
+      "preferences": {
+        "theme": "dark",
+        "notifications": true,
+        "language": "en",
+        "measurementUnit": "metric"
+      }
+    },
+    {
+      "id": "user_002",
+      "username": "sarah_wellness",
+      "email": "sarah@example.com",
+      "password": "hashed_password_002",
+      "firstName": "Sarah",
+      "lastName": "Johnson",
+      "profile": {
+        "gender": "female",
+        "dateOfBirth": "1995-08-22",
+        "age": 29,
+        "height": 165,
+        "currentWeight": 62,
+        "targetWeight": 58,
+        "activityLevel": "high",
+        "medicalConditions": [],
+        "allergies": ["peanuts"]
+      },
+      "metadata": {
+        "createdAt": "2024-02-20T10:15:00Z",
+        "lastLogin": "2025-05-17T09:45:00Z",
+        "lastUpdated": "2025-05-17T09:45:00Z",
+        "isActive": true,
+        "subscriptionTier": "premium"
+      },
+      "preferences": {
+        "theme": "light",
+        "notifications": true,
+        "language": "en",
+        "measurementUnit": "metric"
+      }
+    },
+    {
+      "id": "user_003",
+      "username": "mike_training",
+      "email": "mike@example.com",
+      "password": "hashed_password_003",
+      "firstName": "Michael",
+      "lastName": "Davis",
+      "profile": {
+        "gender": "male",
+        "dateOfBirth": "1988-03-10",
+        "age": 37,
+        "height": 182,
+        "currentWeight": 92,
+        "targetWeight": 85,
+        "activityLevel": "low",
+        "medicalConditions": ["hypertension"],
+        "allergies": []
+      },
+      "metadata": {
+        "createdAt": "2024-03-05T11:20:00Z",
+        "lastLogin": "2025-05-15T16:30:00Z",
+        "lastUpdated": "2025-05-15T16:30:00Z",
+        "isActive": true,
+        "subscriptionTier": "basic"
+      },
+      "preferences": {
+        "theme": "dark",
+        "notifications": false,
+        "language": "en",
+        "measurementUnit": "metric"
+      }
+    }
+  ],
+  "bmiRecords": [
+    {
+      "id": "record_001",
+      "userId": "user_001",
+      "username": "john_fitness",
+      "timestamp": "2025-05-17T10:30:00Z",
+      "weight": 75,
+      "height": 178,
+      "bmi": 23.68,
+      "category": "Normal",
+      "categoryColor": "#22c55e",
+      "previousBMI": 24.05,
+      "bmiChange": -0.37,
+      "healthRisk": "Low",
+      "recommendation": "Maintain current lifestyle",
+      "notes": "Steady progress"
+    },
+    {
+      "id": "record_002",
+      "userId": "user_001",
+      "username": "john_fitness",
+      "timestamp": "2025-05-10T09:15:00Z",
+      "weight": 76.5,
+      "height": 178,
+      "bmi": 24.14,
+      "category": "Normal",
+      "categoryColor": "#22c55e",
+      "previousBMI": 24.65,
+      "bmiChange": -0.51,
+      "healthRisk": "Low",
+      "recommendation": "Continue with regular exercise",
+      "notes": "Weekly measurements"
+    },
+    {
+      "id": "record_003",
+      "userId": "user_002",
+      "username": "sarah_wellness",
+      "timestamp": "2025-05-17T08:00:00Z",
+      "weight": 62,
+      "height": 165,
+      "bmi": 22.77,
+      "category": "Normal",
+      "categoryColor": "#22c55e",
+      "previousBMI": 22.92,
+      "bmiChange": -0.15,
+      "healthRisk": "Low",
+      "recommendation": "Excellent body condition",
+      "notes": "Consistent fitness routine"
+    },
+    {
+      "id": "record_004",
+      "userId": "user_003",
+      "username": "mike_training",
+      "timestamp": "2025-05-16T14:45:00Z",
+      "weight": 92,
+      "height": 182,
+      "bmi": 27.75,
+      "category": "Overweight",
+      "categoryColor": "#fb923c",
+      "previousBMI": 28.20,
+      "bmiChange": -0.45,
+      "healthRisk": "Moderate",
+      "recommendation": "Increase physical activity and reduce calorie intake",
+      "notes": "Started gym training last month"
+    }
+  ],
+  "metabolismData": [
+    {
+      "id": "metabolism_001",
+      "userId": "user_001",
+      "username": "john_fitness",
+      "timestamp": "2025-05-17T10:30:00Z",
+      "bmr": 1702,
+      "bmrMethod": "Mifflin-St Jeor",
+      "tdee": 2208,
+      "activityMultiplier": 1.3,
+      "age": 34,
+      "gender": "male",
+      "weight": 75,
+      "height": 178,
+      "metabolicRate": "Normal",
+      "calorieNeeds": {
+        "maintenance": 2208,
+        "weightLoss": 1758,
+        "weightGain": 2658
+      }
+    },
+    {
+      "id": "metabolism_002",
+      "userId": "user_002",
+      "username": "sarah_wellness",
+      "timestamp": "2025-05-17T08:00:00Z",
+      "bmr": 1420,
+      "bmrMethod": "Mifflin-St Jeor",
+      "tdee": 2015,
+      "activityMultiplier": 1.42,
+      "age": 29,
+      "gender": "female",
+      "weight": 62,
+      "height": 165,
+      "metabolicRate": "Normal",
+      "calorieNeeds": {
+        "maintenance": 2015,
+        "weightLoss": 1515,
+        "weightGain": 2515
+      }
+    },
+    {
+      "id": "metabolism_003",
+      "userId": "user_003",
+      "username": "mike_training",
+      "timestamp": "2025-05-16T14:45:00Z",
+      "bmr": 1825,
+      "bmrMethod": "Mifflin-St Jeor",
+      "tdee": 2138,
+      "activityMultiplier": 1.17,
+      "age": 37,
+      "gender": "male",
+      "weight": 92,
+      "height": 182,
+      "metabolicRate": "Slightly Elevated",
+      "calorieNeeds": {
+        "maintenance": 2138,
+        "weightLoss": 1638,
+        "weightGain": 2638
+      }
+    }
+  ],
+  "healthScores": [
+    {
+      "id": "score_001",
+      "userId": "user_001",
+      "username": "john_fitness",
+      "timestamp": "2025-05-17T10:30:00Z",
+      "overallScore": 82,
+      "bmiScore": 95,
+      "metabolismScore": 85,
+      "fitnessScore": 78,
+      "nutritionScore": 72,
+      "mentalWellnessScore": 80,
+      "trend": "Improving",
+      "recommendation": "Keep up with fitness routine",
+      "riskAssessment": "Low Risk"
+    },
+    {
+      "id": "score_002",
+      "userId": "user_002",
+      "username": "sarah_wellness",
+      "timestamp": "2025-05-17T08:00:00Z",
+      "overallScore": 88,
+      "bmiScore": 92,
+      "metabolismScore": 88,
+      "fitnessScore": 90,
+      "nutritionScore": 85,
+      "mentalWellnessScore": 82,
+      "trend": "Stable",
+      "recommendation": "Excellent health metrics",
+      "riskAssessment": "Very Low Risk"
+    },
+    {
+      "id": "score_003",
+      "userId": "user_003",
+      "username": "mike_training",
+      "timestamp": "2025-05-16T14:45:00Z",
+      "overallScore": 65,
+      "bmiScore": 72,
+      "metabolismScore": 68,
+      "fitnessScore": 55,
+      "nutritionScore": 60,
+      "mentalWellnessScore": 68,
+      "trend": "Improving",
+      "recommendation": "Focus on consistent exercise and dietary changes",
+      "riskAssessment": "Moderate Risk"
+    }
+  ],
+  "healthGuidelines": [
+    {
+      "id": "guideline_underweight",
+      "category": "Underweight",
+      "bmiRange": "Below 18.5",
+      "color": "#facc15",
+      "recommendations": [
+        "Increase calorie intake with nutritious foods",
+        "Focus on protein-rich diet",
+        "Strength training to build muscle",
+        "Consult a nutritionist"
+      ],
+      "healthRisks": [
+        "Weakened immune system",
+        "Bone density loss",
+        "Hormonal imbalances",
+        "Nutritional deficiencies"
+      ]
+    },
+    {
+      "id": "guideline_normal",
+      "category": "Normal",
+      "bmiRange": "18.5 - 24.9",
+      "color": "#22c55e",
+      "recommendations": [
+        "Maintain healthy lifestyle",
+        "Regular physical activity (150 min/week)",
+        "Balanced nutrition",
+        "Adequate sleep (7-9 hours)"
+      ],
+      "healthRisks": [
+        "Minimal health risks",
+        "Low risk of chronic diseases"
+      ]
+    },
+    {
+      "id": "guideline_overweight",
+      "category": "Overweight",
+      "bmiRange": "25 - 29.9",
+      "color": "#fb923c",
+      "recommendations": [
+        "Regular exercise and strength training",
+        "Reduce calorie intake gradually",
+        "Increase fiber intake",
+        "Limit sugary drinks and processed foods",
+        "Monitor weight weekly"
+      ],
+      "healthRisks": [
+        "Increased heart disease risk",
+        "Type 2 diabetes risk",
+        "Joint stress",
+        "Sleep apnea"
+      ]
+    },
+    {
+      "id": "guideline_obese",
+      "category": "Obese",
+      "bmiRange": "30 and above",
+      "color": "#ef4444",
+      "recommendations": [
+        "Consult healthcare professional immediately",
+        "Structured weight loss program",
+        "Daily physical activity",
+        "Professional nutritional guidance",
+        "Mental health support"
+      ],
+      "healthRisks": [
+        "High risk of cardiovascular disease",
+        "Type 2 diabetes",
+        "Hypertension",
+        "Fatty liver disease",
+        "Increased cancer risk"
+      ]
+    }
+  ],
+  "activityLogs": [
+    {
+      "id": "log_001",
+      "userId": "user_001",
+      "username": "john_fitness",
+      "activityType": "BMI Calculation",
+      "timestamp": "2025-05-17T10:30:00Z",
+      "details": "BMI calculated: 23.68, Status: Normal",
+      "status": "success"
+    },
+    {
+      "id": "log_002",
+      "userId": "user_001",
+      "username": "john_fitness",
+      "activityType": "Profile Update",
+      "timestamp": "2025-05-16T15:20:00Z",
+      "details": "Updated weight from 76.5 to 75 kg",
+      "status": "success"
+    },
+    {
+      "id": "log_003",
+      "userId": "user_002",
+      "username": "sarah_wellness",
+      "activityType": "Login",
+      "timestamp": "2025-05-17T09:45:00Z",
+      "details": "User logged in successfully",
+      "status": "success"
+    },
+    {
+      "id": "log_004",
+      "userId": "user_003",
+      "username": "mike_training",
+      "activityType": "Report Generation",
+      "timestamp": "2025-05-16T14:45:00Z",
+      "details": "Weekly health report generated",
+      "status": "success"
+    }
+  ],
+  "nutritionPlans": [
+    {
+      "id": "plan_001",
+      "userId": "user_001",
+      "planName": "Balanced Maintenance",
+      "createdAt": "2025-04-20T09:00:00Z",
+      "dailyCalories": 2208,
+      "macroNutrients": {
+        "protein": {
+          "grams": 165,
+          "percentage": 30
+        },
+        "carbohydrates": {
+          "grams": 277,
+          "percentage": 50
+        },
+        "fats": {
+          "grams": 73,
+          "percentage": 20
+        }
+      },
+      "mealPlan": [
+        {
+          "meal": "Breakfast",
+          "calories": 450,
+          "foods": ["Oatmeal", "Berries", "Protein Powder"]
+        },
+        {
+          "meal": "Lunch",
+          "calories": 600,
+          "foods": ["Grilled Chicken", "Brown Rice", "Vegetables"]
+        },
+        {
+          "meal": "Dinner",
+          "calories": 600,
+          "foods": ["Salmon", "Sweet Potato", "Broccoli"]
+        },
+        {
+          "meal": "Snacks",
+          "calories": 558,
+          "foods": ["Almonds", "Greek Yogurt", "Fruit"]
+        }
+      ]
+    }
+  ],
+  "fitnessPlans": [
+    {
+      "id": "fitness_001",
+      "userId": "user_001",
+      "planName": "Cardio & Strength",
+      "createdAt": "2025-05-01T08:00:00Z",
+      "weeklySchedule": [
+        {
+          "day": "Monday",
+          "exercise": "Weight Training",
+          "duration": 60,
+          "intensity": "High",
+          "caloriesBurned": 400
+        },
+        {
+          "day": "Tuesday",
+          "exercise": "Cardio",
+          "duration": 45,
+          "intensity": "Moderate",
+          "caloriesBurned": 300
+        },
+        {
+          "day": "Wednesday",
+          "exercise": "Yoga",
+          "duration": 30,
+          "intensity": "Low",
+          "caloriesBurned": 150
+        },
+        {
+          "day": "Thursday",
+          "exercise": "Weight Training",
+          "duration": 60,
+          "intensity": "High",
+          "caloriesBurned": 420
+        },
+        {
+          "day": "Friday",
+          "exercise": "HIIT Training",
+          "duration": 30,
+          "intensity": "Very High",
+          "caloriesBurned": 350
+        }
+      ]
+    }
+  ],
+  "notificationPreferences": [
+    {
+      "id": "notif_001",
+      "userId": "user_001",
+      "dailyWeightReminder": true,
+      "weeklyReportEmail": true,
+      "goalAchievementNotification": true,
+      "healthAlertNotification": true,
+      "promotionalEmails": false
+    },
+    {
+      "id": "notif_002",
+      "userId": "user_002",
+      "dailyWeightReminder": true,
+      "weeklyReportEmail": true,
+      "goalAchievementNotification": true,
+      "healthAlertNotification": true,
+      "promotionalEmails": true
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal_001",
+      "userId": "user_001",
+      "goalType": "Weight Loss",
+      "targetWeight": 72,
+      "currentWeight": 75,
+      "weightToLose": 3,
+      "startDate": "2025-04-01T00:00:00Z",
+      "targetDate": "2025-07-01T00:00:00Z",
+      "progress": 33,
+      "status": "In Progress"
+    },
+    {
+      "id": "goal_002",
+      "userId": "user_003",
+      "goalType": "Weight Loss",
+      "targetWeight": 85,
+      "currentWeight": 92,
+      "weightToLose": 7,
+      "startDate": "2025-03-15T00:00:00Z",
+      "targetDate": "2025-09-15T00:00:00Z",
+      "progress": 64,
+      "status": "In Progress"
+    }
+  ]
+}
