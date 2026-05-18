@@ -1,0 +1,24 @@
+{
+  "name": "project-fsd",
+  "version": "1.0.0",
+  "description": "This project loads `database.json` via `fetch`, so open it through a local HTTP server instead of `file://`.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nandana-nov/healthpulse-ai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nandana-nov/healthpulse-ai/issues"
+  },
+  "homepage": "https://github.com/nandana-nov/healthpulse-ai#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
